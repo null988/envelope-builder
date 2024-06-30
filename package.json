@@ -13,6 +13,7 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@mui/material": "^5.15.20",
+    "@mui/x-data-grid": "7.8.0",
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
     "@testing-library/user-event": "^13.2.1",
@@ -28,7 +29,8 @@
     "tss-react": "^4.9.10",
     "typescript": "5.5.2",
     "axios": "1.7.2",
-    "use-debounce": "10.0.1"
+    "use-debounce": "10.0.1",
+    "xlsx": "0.18.5"
   },
   "devDependencies": {
     "@types/prettier": "^2.4.2",
