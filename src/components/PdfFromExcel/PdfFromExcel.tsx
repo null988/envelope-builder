@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 import { tableColumns } from "./constants";
 import { StyledDataGrid, useStyles } from "./styles";
-import { getAddressWithPostalCode } from "../../api/yandex";
+// import { getAddressWithPostalCode } from "../../api/yandex";
 import { parseRawExcel } from "../../helpers/excel";
 import {
   IExcelErrors,
@@ -38,10 +38,11 @@ const PdfFromExcel = () => {
     const formatExcel = async () => {
       const newExcel = await Promise.all(
         parsedExcel.map(async (item, index) => {
-          const result =
-            item.address !== undefined
-              ? await getAddressWithPostalCode(item.address)
-              : undefined;
+          // const result =
+          //   item.address !== undefined
+          //     ? await getAddressWithPostalCode(item.address)
+          //     : undefined;
+          const result = { address: item.address, postalCode: item.index };
           return {
             ...item,
             initialAddress: item.address,

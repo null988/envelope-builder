@@ -10,7 +10,7 @@ interface IParsedExcel {
   errors: IExcelErrors;
 }
 
-export const ExcelColumns = ["fio", "address"] as const;
+export const ExcelColumns = ["fio", "address", "index"] as const;
 export type TExcelColumn = (typeof ExcelColumns)[number];
 
 // Названия столбцов не должны содержаться в других названиях,
@@ -23,6 +23,7 @@ export const excelColumnsConfig: Record<
 > = {
   fio: { name: "фио" },
   address: { name: "адрес" },
+  index: { name: "индекс" },
 };
 const excelColumnsNames = Object.keys(excelColumnsConfig) as TExcelColumn[];
 
@@ -65,6 +66,10 @@ export const parseRawExcel = (rawData: XLSXParseResult): IParsedExcel => {
       columnIndex: -1,
     },
     fio: {
+      rowIndex: -1,
+      columnIndex: -1,
+    },
+    index: {
       rowIndex: -1,
       columnIndex: -1,
     },

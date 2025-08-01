@@ -6,7 +6,7 @@ export const getAddressWithPostalCode = async (value: string) =>
   axios
     .get("https://geocode-maps.yandex.ru/1.x", {
       params: {
-        apikey: "629dd61c-9bbe-4287-ae97-b8283be11cc3",
+        apikey: "66f0fde9-eacc-40d2-b94a-38c2e130b7e0",
         geocode: value,
         format: "json",
       },

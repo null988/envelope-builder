@@ -34,12 +34,12 @@ export const tableColumns: GridColDef[] = [
     flex: 2,
   },
 
-  {
-    field: "address",
-    headerName: "Адрес определенный автоматически",
-    hideable: false,
-    flex: 2,
-  },
+  // {
+  //   field: "address",
+  //   headerName: "Адрес определенный автоматически",
+  //   hideable: false,
+  //   flex: 2,
+  // },
   // {
   //   field: "toPhone",
   //   headerName: "Телефон",
