@@ -194,28 +194,11 @@ module.exports = {
     "import/default": 0,
     "import/named": 0,
     "import/no-named-as-default-member": 0,
-    "import/order": [
-      "error",
-      {
-        groups: [["builtin", "external"], "internal", ["parent", "sibling"]],
-        pathGroups: [
-          {
-            pattern: "{.,..}/**/*.styles",
-            group: "sibling",
-            position: "after",
-          },
-        ],
-        alphabetize: {
-          order: "asc",
-        },
-        "newlines-between": "always",
-      },
-    ],
     "jest/expect-expect": [
       "error",
       { assertFunctionNames: ["expect", "waitApi"] },
     ],
-    "prettier/prettier": ["error", { endOfLine: "auto" }],
+    "prettier/prettier": "off",
   },
   overrides: [
     {
