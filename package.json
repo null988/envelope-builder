@@ -1,5 +1,5 @@
 {
-  "name": "envelope-builder",
+  "name": "envelope-constructor",
   "version": "0.1.0",
   "private": true,
   "homepage": "https://null988.github.io/envelope-builder",
@@ -37,6 +37,7 @@
     "xlsx": "0.18.5"
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "7.21.0-placeholder-for-preset-env.2",
     "@types/prettier": "2.4.2",
     "@typescript-eslint/eslint-plugin": "5.7.0",
     "@typescript-eslint/parser": "5.7.0",
